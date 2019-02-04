@@ -2,6 +2,13 @@ main {
   padding-top: 32px;
 }
 
+.background {
+  background: url('../images/plans-background.jpg');
+  width: 500px;
+  height: 500px;
+  position: fixed;
+}
+
 .package {
   width: 80%;
   margin: 16px 0;
@@ -10,7 +17,9 @@ main {
 }
 
 .package:hover,
-.package:active {
+.package:active,
+#free:hover,
+#free:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-color: #ff1b68;
 }
@@ -34,12 +43,20 @@ main {
   background: #fff;
 }
 
+.clearfix {
+  clear: both;
+}
+
 #plus {
   background: rgba(214, 255, 220, 0.9);
 }
 
 #free {
   background: rgba(234, 252, 237, 0.9);
+  float: right;
+  border-right: none;
+  border-left: 4px solid #0e4f1f;
+  text-align: right;
 }
 
 #premium {
