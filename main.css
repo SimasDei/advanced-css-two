@@ -1,6 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+    url('images/freedom.jpg') left 10% bottom 70% / cover no-repeat border-box,
     #ff1b68;
   /* background-image: url("freedom.jpg");
     background-size: cover;
@@ -17,6 +17,10 @@
   position: relative;
 }
 
+main {
+  overflow: hidden;
+}
+
 .section-title {
   color: #2ddf5c;
   text-align: center;
@@ -24,7 +28,7 @@
 
 #product-overview h1 {
   color: white;
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   position: absolute;
   bottom: 5%;
   left: 3%;
@@ -130,3 +134,52 @@
 /* h1 {
     font-family: sans-serif;
 } */
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: #fff;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: #ff1b68;
+  border-color: #ff1b68;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
